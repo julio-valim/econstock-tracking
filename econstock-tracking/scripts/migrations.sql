@@ -1,0 +1,13 @@
+CREATE TABLE precos_acoes (
+    id SERIAL PRIMARY KEY,
+    ticker VARCHAR(10) NOT NULL,
+    preco NUMERIC(12,2) NOT NULL,
+    datahora TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE acoes_em_tendencia (
+    id SERIAL PRIMARY KEY,
+    ticker VARCHAR(10) NOT NULL,
+    motivo TEXT,
+    datahora TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
