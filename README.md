@@ -1,10 +1,10 @@
 # econstock-tracking
 
 ## Overview
-The econstock-tracking project is an autonomous agent designed to monitor stock prices from the B3 (Bovespa) exchange. It fetches real-time stock prices, analyzes trends, and optionally utilizes a local language model (LLM) to provide insights on stock movements.
+The econstock-tracking project is an autonomous agent designed to monitor stock prices from APIs. It fetches real-time stock prices, analyzes trends, and optionally utilizes a local language model (LLM) to provide insights on stock movements.
 
 ## Features
-- Fetches current stock prices from the Alpha Vantage API.
+- Fetches current stock prices from the Alpha Vantage API (or another setted API).
 - Stores historical stock prices in a PostgreSQL database.
 - Performs technical analysis to identify upward trends.
 - Optionally integrates with a local LLM for enhanced analysis and commentary.
